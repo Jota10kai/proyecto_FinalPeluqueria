@@ -1,0 +1,36 @@
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+
+    z-index: -1;
+}
+
+.carousel-item .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item .container h1 {
+    font-size: 500%;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item .container p {
+    width: 75%;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-carrusel {
+    color: black;
+    font-weight: bold;
+    font-size: 30 p;
+    text-align: center;
+    text-align-last: center;
+}

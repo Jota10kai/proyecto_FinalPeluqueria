@@ -1,0 +1,313 @@
+.container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20;
+}
+
+@media (min-width: 768px) {
+  .container-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .container-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.card {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-img-top {
+  height: 300 px;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.carousel-item .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-item .container h1 {
+  font-size: 500%;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item .container p {
+  width: 75%;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-carrusel {
+  color: black;
+  font-weight: bold;
+  font-size: 30 p;
+  text-align: center;
+  text-align-last: center;
+}
+
+.bi {
+  font-size: 30px;
+}
+
+.bi-whatsapp {
+  color: green;
+}
+
+.bi-instagram {
+  color: red;
+}
+
+.bi-tiktok {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+}
+
+h1 {
+  font-family: "Tilt Prism", cursive;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  background-color: rgb(132, 17, 240);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#header h1 {
+  display: inline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(132, 17, 240);
+  color: white;
+  font-weight: bold;
+}
+
+/* tocando el registro */
+.registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20;
+}
+
+.registro input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registro button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(132, 17, 240);
+  color: white;
+  font-weight: bold;
+}
+
+/* tocando el login */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(132, 17, 240);
+  color: white;
+  font-weight: bold;
+}
+
+.card {
+  width: 18rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card .card-img-top {
+  height: 12rem;
+  object-fit: cover;
+}
+.card .card-body {
+  padding: 1rem;
+}
+.card .card-body .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.card .card-body .card-text {
+  font-size: 1rem;
+  color: #777;
+}
+
+.carousel {
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.carousel:hover {
+  transform: scale(1.05);
+}
+.carousel .carousel-item {
+  height: 12rem;
+  object-fit: cover;
+}
+.carousel .carousel-body {
+  padding: 1rem;
+}
+.carousel .carousel-body .carousel-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.carousel .carousel-body .carousel-text {
+  font-size: 1rem;
+  color: #777;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+}
+.footer .footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.footer .footer-text {
+  font-size: 1rem;
+  color: #777;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+}
+.header .header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.header .header-text {
+  font-size: 1rem;
+  color: #777;
+}
+
+.otros {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+}
+.otros .otros-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.otros .otros-text {
+  font-size: 1rem;
+  color: #777;
+}
+
+/*# sourceMappingURL=style.css.map */
